@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,190 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stack_Views" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg-2" translatesAutoresizingMaskIntoConstraints="NO" id="xL3-Fv-dSr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="zjm-SU-D8z">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="480"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="zjm-SU-D8z"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TeI-k0-23o">
+                                <rect key="frame" x="40" y="60" width="334" height="86"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be productive." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0HV-0g-WZE">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="46.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="70"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not just busy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b5A-nu-3vi">
+                                        <rect key="frame" x="0.0" y="56.666666666666679" width="334" height="29.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="38"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZUJ-0S-yRS">
+                                <rect key="frame" x="20" y="206" width="374" height="157.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-1" translatesAutoresizingMaskIntoConstraints="NO" id="2TP-2Z-7qh">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="157.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2TP-2Z-7qh" secondAttribute="height" multiplier="137:183" id="0dm-b4-JOk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-2" translatesAutoresizingMaskIntoConstraints="NO" id="h5j-Uf-zcp">
+                                        <rect key="frame" x="128" y="0.0" width="118" height="157.66666666666666"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-3" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-4K-Ski">
+                                        <rect key="frame" x="256" y="0.0" width="118" height="157.66666666666666"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h5j-Uf-zcp" firstAttribute="width" secondItem="h5j-Uf-zcp" secondAttribute="height" multiplier="137:183" id="708-mb-lbX"/>
+                                    <constraint firstItem="DnX-4K-Ski" firstAttribute="width" secondItem="DnX-4K-Ski" secondAttribute="height" multiplier="137:183" id="kTw-i4-0Zr"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IIp-wL-V2Q">
+                                <rect key="frame" x="60" y="572" width="294" height="124"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rF-Xi-Uf6">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="56"/>
+                                        <color key="backgroundColor" red="0.41176470590000003" green="0.32549019610000002" blue="0.85882352939999995" alpha="0.19958450843150694" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="Xn8-px-qdM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <state key="normal" title="LOG IN">
+                                            <color key="titleColor" red="0.41176470590000003" green="0.32549019610000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcl-S1-WEE">
+                                        <rect key="frame" x="0.0" y="68" width="294" height="56"/>
+                                        <color key="backgroundColor" red="0.41176470588235292" green="0.32549019607843138" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <state key="normal" title="CREATE ACCOUNT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rcl-S1-WEE" firstAttribute="height" secondItem="0rF-Xi-Uf6" secondAttribute="height" id="zNx-5h-Dsm"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="OAx-6T-qKN">
+                                <rect key="frame" x="40" y="387.66666666666669" width="334" height="160.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Busy people talk about how little time they have. Productive people make time for what is important." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnA-GX-kuR">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="88"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Productive people don’t use time as an excuse." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbq-U5-aPX">
+                                        <rect key="frame" x="0.0" y="112" width="334" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Med-HP-WKW"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="Med-HP-WKW"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xL3-Fv-dSr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Hd-Cd-Rci"/>
+                            <constraint firstAttribute="trailing" secondItem="OAx-6T-qKN" secondAttribute="trailing" constant="40" id="3B4-zp-T1V">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstItem="TeI-k0-23o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9dw-Hp-xFU"/>
+                            <constraint firstItem="ZUJ-0S-yRS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ate-aX-e8k">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="OAx-6T-qKN" firstAttribute="top" secondItem="ZUJ-0S-yRS" secondAttribute="bottom" constant="24" id="BjM-9p-pPE">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-340"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIp-wL-V2Q" secondAttribute="trailing" constant="60" id="C7p-Ey-WpS">
+                                <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="ZUJ-0S-yRS" secondAttribute="trailing" constant="20" id="NO9-RY-mas">
+                                <variation key="heightClass=compact-widthClass=regular" constant="400"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="TeI-k0-23o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Psn-Ak-Hqn"/>
+                            <constraint firstItem="ZUJ-0S-yRS" firstAttribute="top" secondItem="TeI-k0-23o" secondAttribute="bottom" constant="60" id="SEJ-rq-tA1"/>
+                            <constraint firstItem="TeI-k0-23o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="VQL-ap-WKe">
+                                <variation key="heightClass=regular-widthClass=regular" constant="140"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IIp-wL-V2Q" secondAttribute="bottom" constant="40" id="b65-ls-NP4">
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="xL3-Fv-dSr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bGv-4A-M7c">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-400"/>
+                            </constraint>
+                            <constraint firstItem="xL3-Fv-dSr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lSh-Vl-8rv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TeI-k0-23o" secondAttribute="trailing" constant="40" id="rdm-F9-1HV">
+                                <variation key="heightClass=compact-widthClass=regular" constant="440"/>
+                            </constraint>
+                            <constraint firstItem="OAx-6T-qKN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="uIF-0g-TbT">
+                                <variation key="heightClass=compact-widthClass=regular" constant="500"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstItem="IIp-wL-V2Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="vJI-gK-KHP">
+                                <variation key="heightClass=compact-widthClass=regular" constant="520"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="Psn-Ak-Hqn"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Avatar-1" width="229" height="306"/>
+        <image name="Avatar-2" width="229" height="306"/>
+        <image name="Avatar-3" width="229" height="306"/>
+        <image name="Bg-2" width="414" height="896"/>
+    </resources>
 </document>
